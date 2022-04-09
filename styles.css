@@ -1,53 +1,70 @@
 body{
-    background-color: aquamarine;
+    background-color: #CCD9B8;
     font-family: 'Montserrat', sans-serif;
 }
 
 #MainTile{
     color: #87A658;
-    display: block;
+    position: relative;
+    height: 100px;
+    width: 100px;
     float: right;
     padding-right: 5%;
 }
 
 #Logo{
-    height: 10%;
+    max-width: 12%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    vertical-align: middle;
+    margin-left: 1%;
     object-fit: contain;
-    display: inline;
+    align-self: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-0%);
+    
 }
 
 div.MainTitle{
-    padding-top: 0.1pt;
-    padding-bottom: 0.1pt;
     position: relative;
+    display: inline;
     background-color: #F2F2F2;
+    float: left;
+    height: 1%;
 }
 
 div.Navigation{
-    color: #F2F2F2;
-}
-
-ul.Navigation{
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-#Navitem{
+    color: #595959;
     display: inline;
-    float: left;
-    display: block;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom:10px;
-    padding-top: 10px;
-    background-color: #595959;
+    font-weight: bolder;
 }
-#Navitem:hover{
-    background-color: #9b9696;
-}
-
-header{
-    background-color: #595959;
+@media only screen and (min-width:900px){
+    ul.Navigation{
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0;
+        padding: 2%;
+        align-self: left;
+    }
+    
+    #Navitem{
+        display: inline;
+        float: right;
+        display: block;
+        padding-left:5%;
+        padding-right: auto;
+        padding-bottom:10px;
+        background-color: #F2F2F2;
+        font-size: larger;
+    }
+    #Navitem:hover{
+        color: #87A658;
+        text-decoration: underline;
+    }
+    
+    header{
+        background-color: #F2F2F2;
+    }
 }
