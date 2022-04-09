@@ -1,0 +1,43 @@
+body{
+    background-color: aquamarine;
+}
+
+#MainTile{
+    color: #87A658;
+    display: block;
+    text-align: right;
+    padding-right: 5%;
+}
+
+div.MainTitle{
+    padding-top: 0.1pt;
+    padding-bottom: 0.1pt;
+    position: relative;
+    background-color: #F2F2F2;
+}
+
+div.Navigation{
+    color: #F2F2F2;
+}
+
+ul.Navigation{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#Navitem{
+    display: inline;
+    float: left;
+    display: block;
+    padding: 2%;
+    background-color: #595959;
+}
+#Navitem:hover{
+    background-color: #9b9696;
+}
+
+header{
+    background-color: #595959;
+}
