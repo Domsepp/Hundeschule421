@@ -62,6 +62,11 @@ div.Beitragstext{
     text-align: center;
     font-size: vw;
 }
+a.divbutton{
+    text-decoration: none;
+    color: black;
+}
+
 
 @media only screen and (max-device-width: 480px) {
     div.Navigation{
