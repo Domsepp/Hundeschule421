@@ -60,43 +60,10 @@ div.Beitragstext{
     margin: 1%;
     vertical-align: top;
     text-align: center;
-    font-size: 1vw;
+    font-size: vw;
 }
 
-
-
-@media only screen and (min-width: 870px){
-    ul.Navigation{
-        list-style-type: none;
-        overflow: hidden;
-        margin: 0;
-        padding: 2%;
-        align-self: left;
-    }
-
-    #Navitem{
-        display: inline;
-        float: right;
-        display: block;
-        padding-left:5%;
-        padding-right: auto;
-        padding-bottom:10px;
-        background-color: #F2F2F2;
-        font-size: larger;
-        font-weight: bolder;
-    }
-    #Navitem:hover{
-        text-decoration: underline;
-        color: #87A658;
-    }
-    div.navbar{
-        display: none;
-    }
-    div.topnav{
-        display: none;
-    }
-}
-@media only screen and (max-width: 870px){
+@media only screen and (max-device-width: 480px) {
     div.Navigation{
         display: none;;
     }
@@ -135,4 +102,37 @@ div.Beitragstext{
         background-color: #F2F2F2;
         color: black;
     } 
+}
+
+
+@media only screen and (min-device-width: 480px) {
+    ul.Navigation{
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0;
+        padding: 2%;
+        align-self: left;
+    }
+
+    #Navitem{
+        display: inline;
+        float: right;
+        display: block;
+        padding-left:5%;
+        padding-right: auto;
+        padding-bottom:10px;
+        background-color: #F2F2F2;
+        font-size: larger;
+        font-weight: bolder;
+    }
+    #Navitem:hover{
+        text-decoration: underline;
+        color: #87A658;
+    }
+    div.navbar{
+        display: none;
+    }
+    div.topnav{
+        display: none;
+    }
 }
