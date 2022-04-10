@@ -62,38 +62,38 @@ table.MainTitle{
         display: none;;
     }
      /* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    background-color: #E8E8E8;
-    position: relative;
-  }
+    .topnav {
+        overflow: hidden;
+        background-color: #E8E8E8;
+        position: relative;
+    }
   
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: #F2F2F2;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+    .topnav #myLinks {
+        display: none;
+    }
+    
+    /* Style navigation menu links */
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        background: #F2F2F2;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 
-  
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: #F2F2F2;
-    color: black;
-  } 
+    
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: #F2F2F2;
+        color: black;
+    } 
 }
