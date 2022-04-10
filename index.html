@@ -2,6 +2,7 @@
     <meta charset="utf-8">
     <title>Hundeschule 421</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
@@ -20,7 +21,33 @@
                         <li id="NavItem">Datenschutz</li>
                         <li id="NavItem">AGB</li>
                     </ul>
-                </div></td></tr>
+                </div>
+            
+                <!-- Top Navigation Menu -->
+                <div class="topnav">
+                    <a href="#home" class="active">Home</a>
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                    </div>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <script>
+                    function myFunction() {
+                      var x = document.getElementById("myLinks");
+                      if (x.style.display === "block") {
+                        x.style.display = "none";
+                      } else {
+                        x.style.display = "block";
+                      }
+                    }
+                    </script>
+            </td></tr>
             </table> 
         </div>
 
