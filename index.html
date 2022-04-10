@@ -6,7 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+    <script type="text/javascript" src="script.js"></script>
 </head>
+
+
 <body>
     <header>
         <div class="MainTitle">
@@ -22,7 +25,6 @@
                         <li id="NavItem">Home</li>
                     </ul>
                 </div>
-            
                 <div class="topnav">
                     <a href="#home" class="active">Home</a>
                     <div id="myLinks">
@@ -31,20 +33,10 @@
                     <a href="">Datenschutz</a>
                     <a href="">AGB</a>
                     </div>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <a href="javascript:void(0);" class="icon" onclick="dropdownFunc()">
                     <i class="fa fa-bars"></i>
                     </a>
                 </div>
-                <script>
-                    function myFunction() {
-                      var x = document.getElementById("myLinks");
-                      if (x.style.display === "block") {
-                        x.style.display = "none";
-                      } else {
-                        x.style.display = "block";
-                      }
-                    }
-                    </script>
             </td></tr>
             </table> 
         </div>
@@ -55,21 +47,34 @@
         <div class="Content">
             <table class="ContentTable">
                 <tr>
-                    <td><a href="#" class="divbutton"><div class="Beitrag">
+                    <td><div class="Beitrag" onclick="showPopup1()">
                             <div class="Beitragsbild"><img id="Beitrag" src="Images/Titel1_final.jpg" ></div>
                             <div class="Beitragstext"><h3 id="Beitragstitel">Hundetraining fair und empathisch</h3></div>
-                    </div></a></td>
-                    <td><a href="#" class="divbutton"><div class="Beitrag">
+                    </div></td>
+                    <td><div class="Beitrag" onclick="showPopup1()">
                         <div class="Beitragsbild"><img id="Beitrag" src="Images/Titel1_final.jpg" ></div>
                         <div class="Beitragstext"><h3 id="Beitragstitel">Hundetraining fair und empathisch</h3></div>
-                    </div></a></td>
-                    <td><a href="#" class="divbutton"><div class="Beitrag">
+                    </div></td>
+                    <td><div class="Beitrag" onclick="showPopup1()">
                         <div class="Beitragsbild"><img id="Beitrag" src="Images/Titel1_final.jpg" ></div>
                         <div class="Beitragstext"><h3 id="Beitragstitel">Hundetraining fair und empathisch</h3></div>
-                </div></a></td>
+                </div></td>
                 </tr>
                 
             </table>
+
+
+            <div class="popup1" id="popup1">
+                <div class="popupHeader">
+                    <div class="title">Hundetraining fair und empathisch</div>
+                    <button class="closebutton" onclick="removePopup1()">&times;</button>
+                </div>
+                <div class="popupBody">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ex, assumenda aliquam ea dignissimos, voluptas qui ipsam optio amet ullam commodi vitae? Repellat doloremque expedita eum unde ipsum ipsam aliquam aliquid natus voluptatibus odio. Dolorum cumque quis facere culpa impedit molestias magni enim labore id, quos molestiae nostrum commodi nobis magnam quod voluptatibus maiores tempora aliquam? Ex numquam ipsam rerum magni, accusantium laudantium quidem aperiam error iste incidunt eligendi mollitia libero voluptatibus cum corrupti. Illum sint deleniti repudiandae commodi velit!
+                </div>
+            </div>
+            <div  id="overlay" onclick="hidePopup1()"></div>
+
         </div>
     </body>
 </body>
