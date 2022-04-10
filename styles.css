@@ -32,32 +32,35 @@ div.content{
     padding: 2%;
 }
 
-div.beitrag{
+div.Beitrag{
     background-color: #CCD9B8;
     box-shadow: 2px 2px 5px #B5B5B5;
     padding: 5px;
     width: f;
-    margin: 5px;
+    margin: 20px;
 }
 table.ContentTable{
     width: 100%;
 }
 #Beitrag{
     width: 40%;
-    display: inline-block;
-}
-#Beitragstitel{
-    display: inline;
-    
+    margin: auto;
 }
 div.Beitragsbild{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    height: auto;
 }
+
+#Beitragstitel{
+    display: inline-block;
+    
+}
+
 div.Beitragstext{
     margin: 1%;
     vertical-align: top;
+    text-align: center;
+    font-size: 1vw;
 }
 
 
