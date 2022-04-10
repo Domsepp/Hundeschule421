@@ -15,9 +15,28 @@ body{
 table.MainTitle{
     table-layout: auto;
     width: 100%;
+    background-color: #F2F2F2;
 }
 
 #Logo{
     width: 100%;
 }
 
+ul.Navigation{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 2%;
+    align-self: left;
+}
+
+#Navitem{
+    display: inline;
+    float: right;
+    display: block;
+    padding-left:5%;
+    padding-right: auto;
+    padding-bottom:10px;
+    background-color: #F2F2F2;
+    font-size: larger;
+}
