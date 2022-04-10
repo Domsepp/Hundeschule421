@@ -12,59 +12,12 @@ body{
     padding-right: 5%;
 }
 
+table.MainTitle{
+    table-layout: auto;
+    width: 100%;
+}
+
 #Logo{
-    max-width: 12%;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    vertical-align: middle;
-    margin-left: 1%;
-    object-fit: contain;
-    align-self: left;
-    position: relative;
-    top: 50%;
-    transform: translateY(-0%);
-    
+    width: 100%;
 }
 
-div.MainTitle{
-    position: relative;
-    display: inline;
-    background-color: #F2F2F2;
-    float: left;
-    height: 1%;
-}
-
-div.Navigation{
-    color: #595959;
-    display: inline;
-    font-weight: bolder;
-}
-@media only screen and (min-width:900px){
-    ul.Navigation{
-        list-style-type: none;
-        overflow: hidden;
-        margin: 0;
-        padding: 2%;
-        align-self: left;
-    }
-    
-    #Navitem{
-        display: inline;
-        float: right;
-        display: block;
-        padding-left:5%;
-        padding-right: auto;
-        padding-bottom:10px;
-        background-color: #F2F2F2;
-        font-size: larger;
-    }
-    #Navitem:hover{
-        color: #87A658;
-        text-decoration: underline;
-    }
-    
-    header{
-        background-color: #F2F2F2;
-    }
-}
