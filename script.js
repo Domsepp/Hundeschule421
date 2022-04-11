@@ -7,12 +7,14 @@
     }
 }*/
 
+var popup ='';
 
-function showPopup1() {
+function showPopup1(popupname) {
+        popup = popupname;
         document.getElementById('overlay').classList.add('active');
-        document.getElementById('popup1').classList.add('active');
+        document.getElementById(popupname).classList.add('active');
 }
 function removePopup1() {
         document.getElementById('overlay').classList.remove('active');
-        document.getElementById('popup1').classList.remove('active');
+        document.getElementById(popup).classList.remove('active');
 }

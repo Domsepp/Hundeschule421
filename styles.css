@@ -32,43 +32,33 @@ div.content{
     padding: 2%;
 }
 
-
-div.Beitrag:hover{
-    background-color: #d2d8c8;
+.Content{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-table.ContentTable{
-    width: 100%;
-    display: flex;
-}
-div.Beitrag{
-    flex: 1;
+.Beitragselement{
+    padding: 10px;
     background-color: #CCD9B8;
-    box-shadow: 2px 2px 5px #B5B5B5;
-    padding: 5px;
-    margin: 20px;
-    height: max-content;
-}
-#Beitrag{
-    width: 50%;
-    margin: auto;
-}
-div.Beitragsbild{
-    width: 100%;
-    display: flex;
-    height: auto;
-}
-
-#Beitragstitel{
-    display: inline-block;
-    
-}
-
-div.Beitragstext{
-    margin: 1%;
-    vertical-align: top;
     text-align: center;
 }
+.Beitragselement:hover{
+    padding: 10px;
+    background-color: #d2dac8;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+#Beitrag{
+    width: 100%;
+    max-width: 300px;
+}
+#Beitragstitel{
+    font-size: 4vw;
+}
+
 button.divbutton{
     text-decoration: none;
     color: black;
