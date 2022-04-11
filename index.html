@@ -6,6 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script type="text/javascript" src="script.js"></script>
 </head>
 
@@ -52,6 +55,20 @@
                             <div class="Beitragstext"><h3 id="Beitragstitel">Hundetraining fair und empathisch</h3></div>
                     </div></td>
                     <td><div class="Beitrag" onclick="showPopup1()">
+                        <div class="Beitragsbild"><img id="Beitrag" src="Images/Titel3_final.png" ></div>
+                        <div class="Beitragstext"><h3 id="Beitragstitel">Wer bin ich?</h3></div>
+                    </div></td>
+                    <td><div class="Beitrag" onclick="showPopup1()">
+                        <div class="Beitragsbild"><img id="Beitrag" src="Images/Titel1_final.jpg" ></div>
+                        <div class="Beitragstext"><h3 id="Beitragstitel">Hundetraining fair und empathisch</h3></div>
+                </div></td>
+                </tr>  
+                <tr>
+                    <td><div class="Beitrag" onclick="showPopup1()">
+                            <div class="Beitragsbild"><img id="Beitrag" src="Images/Titel1_final.jpg" ></div>
+                            <div class="Beitragstext"><h3 id="Beitragstitel">Hundetraining fair und empathisch</h3></div>
+                    </div></td>
+                    <td><div class="Beitrag" onclick="showPopup1()">
                         <div class="Beitragsbild"><img id="Beitrag" src="Images/Titel1_final.jpg" ></div>
                         <div class="Beitragstext"><h3 id="Beitragstitel">Hundetraining fair und empathisch</h3></div>
                     </div></td>
@@ -59,8 +76,7 @@
                         <div class="Beitragsbild"><img id="Beitrag" src="Images/Titel1_final.jpg" ></div>
                         <div class="Beitragstext"><h3 id="Beitragstitel">Hundetraining fair und empathisch</h3></div>
                 </div></td>
-                </tr>
-                
+                </tr>             
             </table>
 
 
@@ -70,11 +86,32 @@
                     <button class="closebutton" onclick="removePopup1()">&times;</button>
                 </div>
                 <div class="popupBody">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ex, assumenda aliquam ea dignissimos, voluptas qui ipsam optio amet ullam commodi vitae? Repellat doloremque expedita eum unde ipsum ipsam aliquam aliquid natus voluptatibus odio. Dolorum cumque quis facere culpa impedit molestias magni enim labore id, quos molestiae nostrum commodi nobis magnam quod voluptatibus maiores tempora aliquam? Ex numquam ipsam rerum magni, accusantium laudantium quidem aperiam error iste incidunt eligendi mollitia libero voluptatibus cum corrupti. Illum sint deleniti repudiandae commodi velit!
+                    <div class="item">
+                        <img src="Images/Popup1.jpg" style="width: 100%;" >
+                    </div>
+                    <div class="item popupText">
+                        <p>
+                        Mein Name ist Anke Panterodt, ich bin Hundetrainerin aus Leidenschaft. Ich begleite Menschen und Hunde dabei, ihren spannenden und entspannten gemeinsamen Weg im Alltag zu finden</p>
+                    </div>
                 </div>
             </div>
             <div  id="overlay" onclick="hidePopup1()"></div>
 
         </div>
     </body>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="https://wa.me/+491783782701"><i class="icon ion-social-whatsapp"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="tel:+491783782701">Tel:+491783782701</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Paul Panterodt © 2022</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -32,24 +32,29 @@ div.content{
     padding: 2%;
 }
 
-div.Beitrag{
-    background-color: #CCD9B8;
-    box-shadow: 2px 2px 5px #B5B5B5;
-    padding: 5px;
-    margin: 20px;
-}
+
 div.Beitrag:hover{
     background-color: #d2d8c8;
 }
 
 table.ContentTable{
     width: 100%;
+    display: flex;
+}
+div.Beitrag{
+    flex: 1;
+    background-color: #CCD9B8;
+    box-shadow: 2px 2px 5px #B5B5B5;
+    padding: 5px;
+    margin: 20px;
+    height: max-content;
 }
 #Beitrag{
-    width: 40%;
+    width: 50%;
     margin: auto;
 }
 div.Beitragsbild{
+    width: 100%;
     display: flex;
     height: auto;
 }
@@ -63,7 +68,6 @@ div.Beitragstext{
     margin: 1%;
     vertical-align: top;
     text-align: center;
-    font-size: vw;
 }
 button.divbutton{
     text-decoration: none;
@@ -76,16 +80,17 @@ button.divbutton{
 }
 
 
+
 .popup1{
     position:fixed;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%) scale(0);
     transition: 200ms ease-in-out;
-    border: 1px solid black;
     background-color: #F2F2F2;
     z-index: 15;
-    width: 80%;
+    width: 50%;
+    max-width: 900px;
 }
 .popup1.active{
     transform: translate(-50%,-50%) scale(1);
@@ -95,7 +100,8 @@ button.divbutton{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    background: #87A658;
+    box-shadow: 0 8px 6px -6px rgb(58, 58, 58);
 }
 .popupHeader .title{
     font-size: 1.25rem;
@@ -110,7 +116,13 @@ button.divbutton{
     font-weight: bold;
 }
 .popupBody{
-    padding: 10px 15px;
+    padding:10px;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+}
+.popupText{
+    padding: 40% 20px 0px 20px;
+    text-align: center;
 }
 #overlay{
     position: fixed;
@@ -127,6 +139,67 @@ button.divbutton{
     opacity: 1;
     pointer-events: all;
 }
+
+.footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:15px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+
+
 
 @media only screen and (max-device-width: 480px) {
     div.Navigation{
@@ -193,6 +266,7 @@ button.divbutton{
     #Navitem:hover{
         text-decoration: underline;
         color: #87A658;
+        cursor: pointer;
     }
     div.navbar{
         display: none;
