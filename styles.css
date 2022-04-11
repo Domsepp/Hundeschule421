@@ -40,6 +40,7 @@ div.content{
 
 .Beitragselement{
     padding: 10px;
+    margin: 30px;
     background-color: #CCD9B8;
     text-align: center;
 }
@@ -52,11 +53,12 @@ div.content{
 
 
 #Beitrag{
-    width: 100%;
+    width: 70%;
     max-width: 300px;
 }
 #Beitragstitel{
-    font-size: 4vw;
+    font-size: min(max(30px), 25px);
+    padding-top: 20px;
 }
 
 button.divbutton{
@@ -111,7 +113,7 @@ button.divbutton{
     grid-template-columns: auto auto;
 }
 .popupText{
-    padding: 40% 20px 0px 20px;
+    padding: 0 20px 0px 20px;
     text-align: center;
 }
 #overlay{
@@ -192,44 +194,45 @@ button.divbutton{
 
 
 @media only screen and (max-device-width: 480px) {
-    div.Navigation{
-        display: none;;
-    }
      /* Style the navigation menu */
-    .topnav {
-        overflow: hidden;
-        background-color: #E8E8E8;
-        position: relative;
-    }
-  
-    .topnav #myLinks {
-        display: none;
-    }
+     ul.Navigation{
+         display: none;
+     }
+     .topnav{
+         float: right;
+         margin: 10px;
+         width: 5%;
+     }
+     .topnav:hover{
+        filter: invert(65%) sepia(9%) saturate(1831%) hue-rotate(42deg) brightness(92%) contrast(91%);
+     }
+     ul.Dropdown{
+         float: right;
+         list-style: none;
+         font-size: large;
+         margin-top: 60px;
+         text-align: right;
+         background-color: rgb(218, 218, 218);
+     }
     
-    /* Style navigation menu links */
-    .topnav a {
-        color: black;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-    }
-    
-    /* Style the hamburger menu */
-    .topnav a.icon {
-        background: #F2F2F2;
-        display: block;
+     #DropdownMenu{
+        scale: 0;
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
-        right: 0;
-        top: 0;
-    }
+     }
+     #DropdownMenu.active{
+        scale: 1;
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+     }
 
-    
-    /* Style the active link (or home/logo) */
-    .active {
-        background-color: #F2F2F2;
-        color: black;
-    } 
+     #DropdownItem{
+         padding: 5px;
+         font-weight: bold;
+     }
+
 }
 
 
@@ -261,7 +264,10 @@ button.divbutton{
     div.navbar{
         display: none;
     }
-    div.topnav{
+    .topnav{
+        display: none;
+    }
+    ul.Dropdown{
         display: none;
     }
 }
