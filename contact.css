@@ -9,12 +9,17 @@
     width: 100%;
     background-color: white;
     padding: 10px;
+    margin-bottom: 20px;
 }
 .Frage{
     border-bottom: 1px solid black;
     font-size: 1.2em;
     background-color: #CCD9B8;
     padding: 0.5%;
+}
+#FAQ{
+    margin-top: 90px;
+    margin-bottom: 40px;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -24,4 +29,15 @@
    p{
        font-size: 2em;
    }
+   .Frage{
+        border-bottom: 1px solid black;
+        font-size: 2.3em;
+        background-color: #CCD9B8;
+        padding: 1.5%;
+    }
+    #FAQ{
+        margin-top: 150px;
+        font-size: 2.8em;
+        margin-bottom: 50px;
+    }
 }
