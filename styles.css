@@ -237,6 +237,9 @@ button.divbutton{
          padding: 5px;
          font-weight: bold;
      }
+     #DropdownItem:hover{
+         color: blue;
+     }
      .popupText{
          font-size: x-large;
      }
