@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="mainscript.js"></script>
 </head>
 
 
@@ -27,18 +27,14 @@
                         <li id="NavItem">Qualifikationen</li>
                         <li id="NavItem">Home</li>
                     </ul>
-                </div>
-                <div class="topnav">
-                    <a href="#home" class="active">Home</a>
-                    <div id="myLinks">
-                    <a href="">Qualifikationen</a>
-                    <a href="">Kontakt</a>
-                    <a href="">Datenschutz</a>
-                    <a href="">AGB</a>
-                    </div>
-                    <a href="javascript:void(0);" class="icon" onclick="dropdownFunc()">
-                    <i class="fa fa-bars"></i>
-                    </a>
+                    <img class="topnav" src="Images/burger_menu.png" onclick="dropMenu()">
+                    <ul class="Dropdown" id="DropdownMenu">
+                        <li id="DropdownItem">AGB</li>
+                        <li id="DropdownItem">Datenschutz</li>
+                        <li id="DropdownItem">Kontakt</li>
+                        <li id="DropdownItem">Qualifikationen</li>
+                        <li id="DropdownItem">Home</li>
+                    </ul>
                 </div>
             </td></tr>
             </table> 
@@ -48,36 +44,32 @@
 
     <body>
         <div class="Content">
-            <table class="ContentTable">
-                <tr>
-                    <td><div class="Beitrag" onclick="showPopup1()">
-                            <div class="Beitragsbild"><img id="Beitrag" src="Images/Titel1_final.jpg" ></div>
-                            <div class="Beitragstext"><h3 id="Beitragstitel">Hundetraining fair und empathisch</h3></div>
-                    </div></td>
-                    <td><div class="Beitrag" onclick="showPopup1()">
-                        <div class="Beitragsbild"><img id="Beitrag" src="Images/Titel3_final.png" ></div>
-                        <div class="Beitragstext"><h3 id="Beitragstitel">Wer bin ich?</h3></div>
-                    </div></td>
-                    <td><div class="Beitrag" onclick="showPopup1()">
-                        <div class="Beitragsbild"><img id="Beitrag" src="Images/Titel1_final.jpg" ></div>
-                        <div class="Beitragstext"><h3 id="Beitragstitel">Hundetraining fair und empathisch</h3></div>
-                </div></td>
-                </tr>  
-                <tr>
-                    <td><div class="Beitrag" onclick="showPopup1()">
-                            <div class="Beitragsbild"><img id="Beitrag" src="Images/Titel1_final.jpg" ></div>
-                            <div class="Beitragstext"><h3 id="Beitragstitel">Hundetraining fair und empathisch</h3></div>
-                    </div></td>
-                    <td><div class="Beitrag" onclick="showPopup1()">
-                        <div class="Beitragsbild"><img id="Beitrag" src="Images/Titel1_final.jpg" ></div>
-                        <div class="Beitragstext"><h3 id="Beitragstitel">Hundetraining fair und empathisch</h3></div>
-                    </div></td>
-                    <td><div class="Beitrag" onclick="showPopup1()">
-                        <div class="Beitragsbild"><img id="Beitrag" src="Images/Titel1_final.jpg" ></div>
-                        <div class="Beitragstext"><h3 id="Beitragstitel">Hundetraining fair und empathisch</h3></div>
-                </div></td>
-                </tr>             
-            </table>
+            <div class="Beitragselement" onclick="showPopup1('popup1')">
+                <img id="Beitrag" src="Images/Titel1_final.jpg" >
+                <h3 id="Beitragstitel">Hundetraining fair und empathisch</h3>
+            </div>
+            <div class="Beitragselement" onclick="showPopup1('popup2')">
+                <img id="Beitrag" src="Images/Titel3_final.png" >
+                <h3 id="Beitragstitel">Wer bin ich?</h3>
+            </div>
+            <div class="Beitragselement" onclick="showPopup1('popup3')">
+                <img id="Beitrag" src="Images/Titel4_final.png" >
+                <h3 id="Beitragstitel">Wie entstand der Name meiner Hundeschule?</h3>
+            </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             <div class="popup1" id="popup1">
@@ -95,19 +87,70 @@
                     </div>
                 </div>
             </div>
-            <div  id="overlay" onclick="hidePopup1()"></div>
 
         </div>
+        <div class="popup1" id="popup2">
+            <div class="popupHeader">
+                <div class="title">Wer bin ich?</div>
+                <button class="closebutton" onclick="removePopup1()">&times;</button>
+            </div>
+            <div class="popupBody">
+                <div class="item popupText">
+                    <p>
+                    
+                   <strong> Hundeschule 4 Pfoten + 2 Füße = 1 Weg<br>
+                    Wer steht hinter diesem Namen?<br><br></strong>
+
+                    Mein Name ist Anke Panterodt, und ich habe im November 2018 meine mobile Hundeschule ins Leben gerufen. Ich wohne in dem kleinen Ort Klettenberg bei Nordhausen mit meinem Mann, meinem Sohn und unserer Hündin Ally, ein Husky-Mix, aus Spanien auf einem Bauernhof. Bis vor kurzem lebten in unserer Familie noch Ginger, eine portugiesische Podenca, die direkt aus dem spanischen Tierschutz zu uns kam und Whisky, ein Terrier-Mix aus einem heimischen Nachbarort. Leider mussten wir beide in 2019 über die Regenbogenbrücke gehen lassen. Sie fehlen mir bis heute und werden mir immer fehlen. Aktuell leben mit uns auf dem Hof noch 2 Katzen und 19 Hühner.
+                    <br><br>
+                    <strong> Wie kam ich zu dem Beruf des Hundetrainers?</strong>
+                    <br><br>
+                    Whisky, also mein Hund, hat mich auf diesen Weg gebracht. Er zog als Welpe bei uns ein, und wir haben anfangs alles falsch gemacht, was man nur falsch machen kann, einfach dem geschuldet, dass es schon immer so gemacht wurde und ich es nicht besser wusste. Mein Bauchgefühl dabei war allerdings sehr schlecht. Wir haben verschiedene Trainingsmethoden probiert, nichts half. Whisky wurde immer gestresster und „verhaltenskreativer“, es ging ihm nicht gut. Über Umwege bin ich dann auf der Internetseite von „Animal learn“ gelandet und habe mich zur Ausbildung zur Hundetrainerin angemeldet, die ich im Juni 2018 erfolgreich abgeschlossen habe. Dies war die beste berufliche Entscheidung in meinem bisherigen Leben. Denn hier habe ich gelernt, dass es auch einen anderen, fairen und partnerschaftlichen, Umgang zwischen Mensch und Hund gibt.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup1" id="popup3" style="top: 30%;">
+            <div class="popupHeader">
+                <div class="title">Wie entstand der Name meiner Hundeschule?</div>
+                <button class="closebutton" onclick="removePopup1()">&times;</button>
+            </div>
+            <div class="popupBody">
+                <div class="item popupText">
+                    <p>
+                        Nach vielen Ideen, die ebenso oft wieder verworfen wurden, habe ich mich gefragt, was genau ich mit meiner Hundeschule erreichen will. Ich möchte Hunde und ihre Menschen zusammen auf einen gemeinsamen Weg bringen. Hunde haben 4 Pfoten, Menschen 2 Füße, und zusammen gehen sie 1 Weg. Und so war der Name der Hundeschule geboren.<br><br> <strong>Ziemlich simpel.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div  id="overlay" onclick="hidePopup1()"></div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </body>
     <div class="footer-basic">
         <footer>
-            <div class="social"><a href="https://wa.me/+491783782701"><i class="icon ion-social-whatsapp"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <div class="social"><a href="https://wa.me/+491783782701"><i class="icon ion-social-whatsapp"></i></a>
+                <a href="https://www.facebook.com/Hundeschule421"><i class="icon ion-social-facebook"></i></a></div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="tel:+491783782701">Tel:+491783782701</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="mailto:hundeschule421@t-online.de?subject=Terminanfrage">E-Mail: hundeschule421@t-online.de</a></li>
             </ul>
             <p class="copyright">Paul Panterodt © 2022</p>
         </footer>

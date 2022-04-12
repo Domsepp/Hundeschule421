@@ -1,6 +1,7 @@
 body{
     background-color: #CCD9B8;
     font-family: 'Montserrat', sans-serif;
+    min-height: 1000px;;
 }
 
 #MainTile{
@@ -32,43 +33,35 @@ div.content{
     padding: 2%;
 }
 
-
-div.Beitrag:hover{
-    background-color: #d2d8c8;
+.Content{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-table.ContentTable{
-    width: 100%;
-    display: flex;
-}
-div.Beitrag{
-    flex: 1;
+.Beitragselement{
+    padding: 10px;
+    margin: 30px;
     background-color: #CCD9B8;
-    box-shadow: 2px 2px 5px #B5B5B5;
-    padding: 5px;
-    margin: 20px;
-    height: max-content;
-}
-#Beitrag{
-    width: 50%;
-    margin: auto;
-}
-div.Beitragsbild{
-    width: 100%;
-    display: flex;
-    height: auto;
-}
-
-#Beitragstitel{
-    display: inline-block;
-    
-}
-
-div.Beitragstext{
-    margin: 1%;
-    vertical-align: top;
     text-align: center;
 }
+.Beitragselement:hover{
+    padding: 10px;
+    background-color: #d2dac8;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+#Beitrag{
+    width: 70%;
+    max-width: 300px;
+}
+#Beitragstitel{
+    font-size: min(max(30px), 25px);
+    padding-top: 20px;
+}
+
 button.divbutton{
     text-decoration: none;
     color: black;
@@ -89,7 +82,7 @@ button.divbutton{
     transition: 200ms ease-in-out;
     background-color: #F2F2F2;
     z-index: 15;
-    width: 50%;
+    width: 80%;
     max-width: 900px;
 }
 .popup1.active{
@@ -121,7 +114,7 @@ button.divbutton{
     grid-template-columns: auto auto;
 }
 .popupText{
-    padding: 40% 20px 0px 20px;
+    padding: 0 20px 0px 20px;
     text-align: center;
 }
 #overlay{
@@ -202,44 +195,48 @@ button.divbutton{
 
 
 @media only screen and (max-device-width: 480px) {
-    div.Navigation{
-        display: none;;
-    }
      /* Style the navigation menu */
-    .topnav {
-        overflow: hidden;
-        background-color: #E8E8E8;
-        position: relative;
-    }
-  
-    .topnav #myLinks {
-        display: none;
-    }
+     ul.Navigation{
+         display: none;
+     }
+     .topnav{
+         float: right;
+         margin: 10px;
+         width: 5%;
+     }
+     .topnav:hover{
+        filter: invert(65%) sepia(9%) saturate(1831%) hue-rotate(42deg) brightness(92%) contrast(91%);
+     }
+     ul.Dropdown{
+         float: right;
+         list-style: none;
+         font-size: large;
+         margin-top: 60px;
+         text-align: right;
+         background-color: rgb(218, 218, 218);
+     }
     
-    /* Style navigation menu links */
-    .topnav a {
-        color: black;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-    }
-    
-    /* Style the hamburger menu */
-    .topnav a.icon {
-        background: #F2F2F2;
-        display: block;
+     #DropdownMenu{
+        scale: 0;
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
-        right: 0;
-        top: 0;
-    }
+     }
+     #DropdownMenu.active{
+        scale: 1;
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+     }
 
-    
-    /* Style the active link (or home/logo) */
-    .active {
-        background-color: #F2F2F2;
-        color: black;
-    } 
+     #DropdownItem{
+         padding: 5px;
+         font-weight: bold;
+     }
+     .popupText{
+         font-size: x-large;
+     }
+
 }
 
 
@@ -271,7 +268,10 @@ button.divbutton{
     div.navbar{
         display: none;
     }
-    div.topnav{
+    .topnav{
+        display: none;
+    }
+    ul.Dropdown{
         display: none;
     }
 }
