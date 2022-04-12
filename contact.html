@@ -1,0 +1,82 @@
+<head>
+    <meta charset="utf-8">
+    <title>Hundeschule 421</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript" src="mainscript.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="MainTitle">
+            <table class="MainTitle">
+                <col style="width:20%">
+                <col style="width: 80%">
+                <tr id="Logodiv"><td><img src="Images/Logo_borderless.png" id="Logo"></td><td><div class="Navigation">
+                    <ul class="Navigation">
+                        <li id="NavItem">AGB</li>
+                        <li id="NavItem">Datenschutz</li>
+                        <li id="NavItem"><a href="contact.html" style="color: black;">Kontakt</a></li>
+                        <li id="NavItem">Qualifikationen</li>
+                        <li id="NavItem"><a href="index.html" style="color: black;">Home</a></li>
+                    </ul>
+                    <img class="topnav" src="Images/burger_menu.png" onclick="dropMenu()">
+                    <ul class="Dropdown" id="DropdownMenu">
+                        <li id="DropdownItem">AGB</li>
+                        <li id="DropdownItem">Datenschutz</li>
+                        <li id="DropdownItem"><a href="contact.html" style="color: black;">Kontakt</a></li>
+                        <li id="DropdownItem">Qualifikationen</li>
+                        <li id="DropdownItem"><a href="index.html" style="color: black;">Home</a></li>
+                    </ul>
+                </div>
+            </td></tr>
+            </table> 
+        </div>
+
+    </header>
+
+    <body>
+        <div class="Content">
+            <div class="Beitragselement" onclick="showPopup1('popup1')">
+                <img id="Beitrag" src="Images/Titel1_final.jpg" >
+                <h3 id="Beitragstitel">Hundetraining fair und empathisch</h3>
+            </div>
+            <div class="Beitragselement" onclick="showPopup1('popup2')">
+                <img id="Beitrag" src="Images/Titel3_final.png" >
+                <h3 id="Beitragstitel">Wer bin ich?</h3>
+            </div>
+            <div class="Beitragselement" onclick="showPopup1('popup3')">
+                <img id="Beitrag" src="Images/Titel4_final.png" >
+                <h3 id="Beitragstitel">Wie entstand der Name meiner Hundeschule?</h3>
+            </div>
+        </div>
+
+
+    </body>
+
+
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="https://wa.me/+491783782701"><i class="icon ion-social-whatsapp"></i></a>
+                <a href="https://www.facebook.com/Hundeschule421"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="tel:+491783782701">Tel:+491783782701</a></li>
+                <li class="list-inline-item"><a href="mailto:hundeschule421@t-online.de?subject=Terminanfrage">E-Mail: hundeschule421@t-online.de</a></li>
+            </ul>
+            <p class="copyright">Paul Panterodt © 2022</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>

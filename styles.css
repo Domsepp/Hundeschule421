@@ -4,6 +4,10 @@ body{
     min-height: 1000px;;
 }
 
+a{
+    color: black;
+}
+
 #MainTile{
     color: #87A658;
     position: relative;
