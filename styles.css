@@ -1,6 +1,7 @@
 body{
     background-color: #CCD9B8;
     font-family: 'Montserrat', sans-serif;
+    min-height: 1000px;;
 }
 
 #MainTile{
@@ -81,7 +82,7 @@ button.divbutton{
     transition: 200ms ease-in-out;
     background-color: #F2F2F2;
     z-index: 15;
-    width: 50%;
+    width: 80%;
     max-width: 900px;
 }
 .popup1.active{
@@ -231,6 +232,9 @@ button.divbutton{
      #DropdownItem{
          padding: 5px;
          font-weight: bold;
+     }
+     .popupText{
+         font-size: x-large;
      }
 
 }
