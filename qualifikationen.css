@@ -60,16 +60,15 @@ html{
 .row section .icon,
 .center-line .scroll-icon{
     position: absolute;
-    background: #CCD9B8;
+    background: #87A658;
     margin-left: 10px;
     height: 20px;
     width: 20px;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #3ea0e2;
     font-size: 17px;
-    box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+    box-shadow: 0 0 0 4px #daecb7, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
 }
 .center-line .scroll-icon{
     bottom: 0px;
