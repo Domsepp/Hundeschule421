@@ -48,6 +48,7 @@ div.content{
     margin: 30px;
     background-color: #CCD9B8;
     text-align: center;
+    border-radius: 5px 5px 5px 5px;
 }
 .Beitragselement:hover{
     padding: 10px;
@@ -60,6 +61,7 @@ div.content{
 #Beitrag{
     width: 70%;
     max-width: 300px;
+    border-radius: 5px;
 }
 #Beitragstitel{
     font-size: min(max(30px), 25px);
