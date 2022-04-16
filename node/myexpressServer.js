@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.all("*", (req,res) => {
-    res.send("<h1>Hello World</h1>");
+    res.send("hello world!!!");
 });
 
 app.listen(1337);
