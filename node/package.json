@@ -1,0 +1,14 @@
+{
+  "name": "expressserv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "myexpressServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
