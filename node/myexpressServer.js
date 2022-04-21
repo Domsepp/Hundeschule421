@@ -3,6 +3,8 @@ const path = require("path")
 const app = express();
 
 app.use(express.static('pages/styles'));
+app.use(express.static('pages/Images'));
+app.use(express.static('pages/scripts'));
 
 app.get("/", (req,res) => {                             // Wenn nichts hinten dran steht, soll es einfach ein get request machen
     res.sendFile(path.join(__dirname) + "/pages/index.html")
