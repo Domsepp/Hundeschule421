@@ -1,10 +1,11 @@
 const express = require("express");
+const path = require("path")
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static('pages/styles'));
 
 app.get("/", (req,res) => {                             // Wenn nichts hinten dran steht, soll es einfach ein get request machen
-    res.send("hello GET world!!!");
+    res.sendFile(path.join(__dirname) + "/pages/index.html")
 });
 app.get("/users/", (req,res) => {              
     res.send("hello user world!!!");
