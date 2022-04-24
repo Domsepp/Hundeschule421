@@ -7,12 +7,12 @@ app.use(express.static('pages/Images'));
 app.use(express.static('pages/scripts'));
 
 
-app.get("/", (req,res) => {                             // Wenn nichts hinten dran steht, soll es einfach ein get request machen
-    res.sendFile(path.join(__dirname + "/pages/index.html"))
-});
-app.get("/users/", (req,res) => {              
-    res.send("hello user world!!!");
-});
+function mainPage(req,res,next){
+    res.sendFile(path.join(__dirname + "/pages/index.html"));
+}
+
+
+app.use("/", mainPage);
 
 app.listen(1337);
 console.log("Sever listening on port 1337");
