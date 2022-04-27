@@ -12,6 +12,7 @@ var popup ='';
 var visible = 0;
 
 function showPopup1(popupname) {
+        console.log("Hello World");
         popup = popupname;
         document.getElementById('overlay').classList.add('active');
         document.getElementById(popupname).classList.add('active');

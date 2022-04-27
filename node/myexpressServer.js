@@ -3,11 +3,12 @@ const path = require("path");
 const helmet = require("helmet");
 const app = express();
 
-
 app.use(helmet());
+
 app.use(express.static('pages/styles'));
 app.use(express.static('pages/Images'));
 app.use(express.static('pages/scripts'));
+app.use(express.static('pages'));
 
 app.use(express.static('public'));
 app.use(express.json());
@@ -16,7 +17,9 @@ app.use(express.urlencoded({extended: false}));
 
 function mainPage(req,res,next){
     res.sendFile(path.join(__dirname + "/pages/index.html"));
+    res.sendFile(path.join(__dirname + "/pages/scripts/mainscript.js"));
 }
+
 
 function getLogin(req,res,next){
     console.log(req.body['name']);
