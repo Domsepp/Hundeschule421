@@ -1,7 +1,10 @@
 const express = require("express");
-const path = require("path")
+const path = require("path");
+const helmet = require("helmet");
 const app = express();
 
+
+app.use(helmet());
 app.use(express.static('pages/styles'));
 app.use(express.static('pages/Images'));
 app.use(express.static('pages/scripts'));
