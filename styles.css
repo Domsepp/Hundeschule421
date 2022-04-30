@@ -39,8 +39,8 @@ div.content{
 
 .Content{
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .Beitragselement{
@@ -211,6 +211,10 @@ button.divbutton{
 
 @media only screen and (max-device-width: 480px) {
      /* Style the navigation menu */
+     #Logo{
+        max-width: 50%;
+        min-width: 300px;
+    }
      ul.Navigation{
          display: none;
      }

@@ -19,7 +19,7 @@
             <table class="MainTitle">
                 <col style="width:20%">
                 <col style="width: 80%">
-                <tr id="Logodiv"><td><img src="Images/Logo_borderless.png" id="Logo"></td><td><div class="Navigation">
+                <tr id="Logodiv"><td><a href="index.html"><img src="Images/Logo_borderless.png" id="Logo"></a></td><td><div class="Navigation">
                     <ul class="Navigation">
                         <li id="NavItem"><a href="agb.html" style="color: black;">AGB</a></li>
                         <li id="NavItem"><a href="datenschutz.html" style="color: black;">Datenschutz</a></li>
@@ -59,6 +59,10 @@
             <div class="Beitragselement" onclick="showPopup1('popup4')">
                 <img id="Beitrag" src="Images/Titel5_final.jpg" >
                 <h3 id="Beitragstitel">Über die Hundeschule</h3>
+            </div>
+            <div class="Beitragselement" onclick="showPopup1('popup5')">
+                <img id="Beitrag" src="Images/Titel6_final.jpg" >
+                <h3 id="Beitragstitel">Mitgliedschaften</h3>
             </div>
 
 
@@ -134,7 +138,7 @@
                 <button class="closebutton" onclick="removePopup1()">&times;</button>
             </div>
             <div class="popupBody">
-                <div class="item popupText">
+                <div class="item popupText" style="max-height: 500px; overflow-y: auto;">
                     <p>
                         Meine Hundeschule besteht seit dem 01.11.2018. Ich bin mobil unterwegs und helfe Menschen und Hunden im richtigen Umgang miteinander.<br><br>
                         Mein Training basiert auf dem gemeinsamen Lernen von Mensch und Hund. Sie lernen miteinander und voneinander, um ein entspanntes Zusammenleben zu erreichen. 
@@ -162,22 +166,27 @@
             </div>
         </div>
 
+        <div class="popup1" id="popup5" style="top: 30%;">
+            <div class="popupHeader">
+                <div class="title">Mitgliedschaften</div>
+                <button class="closebutton" onclick="removePopup1()" >&times;</button>
+            </div>
+            <div class="popupBody" style="width: 100%; max-height: 500px; overflow-y: auto;">
+                <div class="item popupText">
+                    <p>
+                       <img src="Images/bg-hund-logo-2824592a.webp" style="width: 100%;"><br>
+                       <img src="Images/gewaltfreies_Hundetraining.png" style="width: 100%;"><br>
+                       <img src="Images/Logo-Netzwerk-1-2.jpg" style="width: 100%;"><br>
+                       <img src="Images/Logo_2019_1.jpg" style="width: 100%;"><br>
+                       <img src="Images/logo_stresstrainerinnen.png" style="width: 100%;"><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <div  id="overlay" onclick="hidePopup1()"></div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     </body>
