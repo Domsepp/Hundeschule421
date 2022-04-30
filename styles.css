@@ -1,7 +1,7 @@
 body{
     background-color: #CCD9B8;
     font-family: 'Montserrat', sans-serif;
-    min-height: 1000px;;
+    min-height: 4000px;;
 }
 
 a{
@@ -90,6 +90,8 @@ button.divbutton{
     z-index: 15;
     width: 80%;
     max-width: 900px;
+    max-height: 600px;
+    overflow-y: auto;
 }
 .popup1.active{
     transform: translate(-50%,-50%) scale(1);
