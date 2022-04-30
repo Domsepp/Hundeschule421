@@ -91,7 +91,6 @@ button.divbutton{
     width: 80%;
     max-width: 900px;
     max-height: 600px;
-    overflow-y: auto;
 }
 .popup1.active{
     transform: translate(-50%,-50%) scale(1);
@@ -113,17 +112,25 @@ button.divbutton{
     border:none;
     outline: none;
     background: none;
-    font-size: 1.25rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 .popupBody{
     padding:10px;
     display: inline-grid;
     grid-template-columns: auto auto;
+    max-height: 500px;
+    overflow-y: auto;
 }
 .popupText{
     padding: 0 20px 0px 20px;
     text-align: center;
+}
+.Quote{
+    background-color: #bebcbc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px 5px 5px 5px;
 }
 #overlay{
     position: fixed;
