@@ -149,7 +149,7 @@ button.divbutton{
 }
 
 .footer-basic {
-    padding:40px 0;
+    padding:20px 0;
     background-color:#ffffff;
     color:#4b4c4d;
   }
@@ -179,14 +179,13 @@ button.divbutton{
   
   .footer-basic .social {
     text-align:center;
-    padding-bottom:15px;
   }
   
   .footer-basic .social > a {
     font-size:24px;
     width:40px;
     height:40px;
-    line-height:40px;
+    line-height:10px;
     display:inline-block;
     text-align:center;
     margin:0 8px;
