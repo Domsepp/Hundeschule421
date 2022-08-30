@@ -33,7 +33,7 @@ class NameNum extends React.Component{
     super(props);
     this.state = {name: "Maggi", num: 1};
   }
-  static getDerivedStateFromProps(props, state) {
+  static getDerivedStateFromProps(props) {
     return {name: props.name, num: props.num};
   }
   setVals(props){
